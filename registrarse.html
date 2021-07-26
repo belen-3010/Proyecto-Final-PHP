@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ingreso</title>
+	<link rel="stylesheet" href="css/estilos3.css">
+</head>
+<body>
+	<section class="header">
+        <div class="volver">
+            <a href="index.html">Volver</a>
+        </div>
+    </section>
+	<h1>REGISTRO</h1>
+	<div class="padre">
+	<form action="../Proyecto_final/class/registrarse.php" method="POST" target="_self">
+		
+	
+        <div class="contenedor">
+			<!--nombre del formulario--> 
+			<legend>DATOS PERSONALES</legend>
+			
+			<!--valores solo para sistema, que no deben verse--> 
+			<input type="hidden" id="sistema" name="sistema" value="SAP">
+
+			 <!-- Colocar nombre --> 
+			
+			<br>
+			<input type="text" id="nombre" name="nombre" placeholder="Tu nombre." required="true">
+		
+			<input type="text" id="apellido" name="apellido" placeholder="Tu apellido." required="true">
+			<br>
+			
+
+			 <!-- contraseña con texto oculto --> 
+			
+			<br>
+			
+			 <!-- email --> 
+			<input type="email" id="email" placeholder="Tu mail." name="email">
+
+			<br>
+			<br>
+			<input type="text" id="usuario" name="usuario" placeholder="Nombre de usuario." required="true">
+			
+			<input type="password" id="contraseña" name="contraseña"  placeholder="Tu contraseña." required="true">
+			<input type="submit" id="boton" value="Enviar">
+
+
+        </div>
+
+	
+	</form>
+	<script src="script/script.js"></script>
+</div>
+</body>
+</html>

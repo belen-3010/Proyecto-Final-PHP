@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="./class/correo.php" method="post" name="form1">
+        <table width="472" border="0">
+            <tr>
+                <th scope="col">asunto</th>
+                <th scope="col">
+                    <label for="">
+                        <input type="text" name="asunto" id="asunto">
+                    </label>
+                </th>
+            </tr>
+            <tr>
+                <th scope="row">correo</th>
+                <td>
+                    <label for="">
+                        <input type="text" name="destinatario" id="destinatario">
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">mensaje</th>
+                <td>
+                    <label for="">
+                        <textarea name="mensaje" id="mensaje" cols="45" rows="5"></textarea>
+                    </label>
+                </td>
+            </tr>
+            <tr>
+                <th scope="row">&nbsp;</th>
+                <td><label for="">
+                    <input type="submit" name="button" value="submit">
+                    <input type="reset" name="button2" value="reset">
+                </label></td>
+            </tr>
+        </table>
+    </form>
+</body>
+</html>
