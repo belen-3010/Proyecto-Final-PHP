@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ingreso</title>
+	<link rel="stylesheet" href="css/estilos6.css">
+</head>
+<body>
+	<section class="header">
+		<img src="img/logo2.png" alt="">
+        <div class="volver">
+            <a href="index.html">Volver</a>
+        </div>
+    </section>
+    <h1>PEDIDO DE TEXTO</h1>
+	<div class="padre">
+	<form action="../Proyecto_final/class/mandarmail.php" method="POST" target="_self">
+		
+	
+        <div class="contenedor">
+			<!--nombre del formulario--> 
+			<legend>Datos personales</legend>
+			
+		
+			<br>
+			<input type="text" id="usuario" name="usuario" placeholder="Nombre de usuario." required="true">
+			
+            <br>
+            <legend>Datos de los textos</legend>
+			<br>
+            <input type="text" id="id" name="id" placeholder="Escriba el id del texto." required="false">
+			<br>
+			<input type="text" id="libro" name="libro" placeholder="Escriba el nombre del texto." required="false">
+			<br>
+	
+			<input type="text" id="autor" name="autor" placeholder="Autor/a del texto." required="false">
+			<br>
+
+          
+			<br>
+			
+			<input type="submit" id="boton" value="Enviar">
+			
+	
+        </div>
+	
+	</form>
+	<script src="script/script.js"></script>
+</div>
+</body>
+</html>

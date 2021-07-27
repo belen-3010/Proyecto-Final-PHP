@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Ingreso</title>
+	<link rel="stylesheet" href="css/estilos3.css">
+</head>
+<body>
+	<section class="header">
+        <div class="volver">
+            <a href="index.html">Volver</a>
+        </div>
+    </section>
+	<h1>Ingreso de datos.</h1>
+	<div class="padre">
+	<form action="../Proyecto_final/class/insertarlibro.php" method="POST" target="_self">
+		<br>
+        <div class="contendor2">
+            <br>
+            <legend>Datos de los textos</legend>
+			<br>
+			<input type="text" id="libro" name="libro" placeholder="Escriba el nombre del texto." required="false">
+	
+			<input type="text" id="autor" name="autor" placeholder="Autor/a del texto." required="false">
+			<br>
+
+          
+			<br>
+			<input type="number" id="año" name="año" placeholder="Año de publicación." required="false">
+		
+	 		<!-- selector --> 
+			<select name="genero" id="genero" onchange="aparece()" >
+				<option value="generol" selected>Género literario.</option>
+				<option value="1" idl="1">Narrativo.</option>
+				<option value="2" id="2">Lírico.</option>
+				<option value="3" id="3">Dramático.</option>
+                <option value="4" id="4">Ensayo.</option>
+				<option value="5">Divulgación cientÍfica.</option>
+				<option value="6">Esoterismo.</option>
+                <option value="7" >Otro.</option>
+
+			</select>
+			<br>
+			<br>
+			<select name="genero2" id="genero2"
+			 >
+			 	<option value="drama" selected>Género narrativo.</option>
+				<option value="1">Drama.</option>
+				<option value="2">Terror.</option>
+				<option value="3" >Fantástico.</option>
+                <option value="4">Maravilloso.</option>
+				<option value="5">Ciencia ficción.</option>
+				<option value="6" >Romance.</option>
+                <option value="7" >Otro.</option>
+
+            
+			</select>
+			<br>
+	
+			<br>
+	 		<!-- envío del formulario--> 
+			<input type="submit" id="boton" value="Enviar">
+			
+	
+        </div>
+	
+	</form>
+	<script src="script/script.js"></script>
+</div>
+</body>
+</html>
