@@ -35,15 +35,19 @@ $dos = mysqli_query($conexion,"SELECT * FROM generoliterario");
     <th></th>
   </tr>
     
+  <?php 
+        while($filas = $listado = mysqli_fetch_array($query))
+        {?>
         <tr>
-            <td id="cero">id</td>
-            <td id="uno">nombre</td>
-            <td id="dos">autor</td>
-            <td id="tres">fecha de oublicacion</td>
-            <td><a href="editar.php?nombre=<?php echo $filas['nombre'];?>" class="rosa2"> Editar</a> </td>
-            <td><a href="eliminar.php?nombre=<?php echo $filas['nombre'];?>" class="rosa2">Eliminar</a> </td>
+            <td id="uno"><?php echo $filas['id_libro'];?></td>
+            <td id="dos"><?php echo $filas['nombre'];?></td>
+            <td id="tres"><?php echo $filas['autor'];?></td>
+            <td id="cuatro"><?php echo $filas['año'];?></td>
+            <td><a href="editar.php?id_libro=<?php echo $filas['id_libro'];?>" class="rosa2"> Editar</a> </td>
+            <td><a href="eliminar.php?nombre=<?php echo $filas['nombre'];?>"class="rosa2"> Eliminar</a> </td>
             
         </tr>
+        <?php } ?> 
        
     </table>
     </div>
